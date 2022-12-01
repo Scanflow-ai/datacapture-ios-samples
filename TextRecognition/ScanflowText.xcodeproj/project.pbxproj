@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6870809E2934EFCD00460EC3 /* ScanflowText.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6870809D2934EFCD00460EC3 /* ScanflowText.docc */; };
+		687080A42934EFCD00460EC3 /* ScanflowText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687080992934EFCD00460EC3 /* ScanflowText.framework */; };
+		687080A92934EFCD00460EC3 /* ScanflowTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687080A82934EFCD00460EC3 /* ScanflowTextTests.swift */; };
+		687080AA2934EFCD00460EC3 /* ScanflowText.h in Headers */ = {isa = PBXBuildFile; fileRef = 6870809C2934EFCD00460EC3 /* ScanflowText.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080BF2934F06800460EC3 /* config.txt in Resources */ = {isa = PBXBuildFile; fileRef = 687080B52934F06800460EC3 /* config.txt */; };
+		687080C02934F06800460EC3 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 687080B72934F06800460EC3 /* test.jpg */; };
+		687080C12934F06800460EC3 /* ppocr_keys_v1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 687080B92934F06800460EC3 /* ppocr_keys_v1.txt */; };
+		687080C22934F06800460EC3 /* ch_ppocr_mobile_v2.0_rec_opt.nb in Resources */ = {isa = PBXBuildFile; fileRef = 687080BB2934F06800460EC3 /* ch_ppocr_mobile_v2.0_rec_opt.nb */; };
+		687080C32934F06800460EC3 /* ch_ppocr_mobile_v2.0_det_opt.nb in Resources */ = {isa = PBXBuildFile; fileRef = 687080BC2934F06800460EC3 /* ch_ppocr_mobile_v2.0_det_opt.nb */; };
+		687080C42934F06800460EC3 /* ch_ppocr_mobile_v2.0_cls_opt.nb in Resources */ = {isa = PBXBuildFile; fileRef = 687080BD2934F06800460EC3 /* ch_ppocr_mobile_v2.0_cls_opt.nb */; };
+		687080C52934F06800460EC3 /* download.sh in Resources */ = {isa = PBXBuildFile; fileRef = 687080BE2934F06800460EC3 /* download.sh */; };
+		687080DB2934F0F500460EC3 /* cls_process.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080C62934F0F500460EC3 /* cls_process.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080DC2934F0F500460EC3 /* det_process.cc in Sources */ = {isa = PBXBuildFile; fileRef = 687080C72934F0F500460EC3 /* det_process.cc */; };
+		687080DD2934F0F500460EC3 /* clipper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687080C82934F0F500460EC3 /* clipper.mm */; };
+		687080DE2934F0F500460EC3 /* db_post_process.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080C92934F0F500460EC3 /* db_post_process.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080DF2934F0F500460EC3 /* paddle_lite_factory_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080CB2934F0F500460EC3 /* paddle_lite_factory_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E02934F0F500460EC3 /* paddle_use_ops.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080CC2934F0F500460EC3 /* paddle_use_ops.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E12934F0F500460EC3 /* ScanflowCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687080CD2934F0F500460EC3 /* ScanflowCore.framework */; };
+		687080E22934F0F500460EC3 /* paddle_use_kernels.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080CE2934F0F500460EC3 /* paddle_use_kernels.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E32934F0F500460EC3 /* paddle_use_passes.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080CF2934F0F500460EC3 /* paddle_use_passes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E42934F0F500460EC3 /* paddle_image_preprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080D02934F0F500460EC3 /* paddle_image_preprocess.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E52934F0F500460EC3 /* paddle_place.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080D12934F0F500460EC3 /* paddle_place.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E62934F0F500460EC3 /* paddle_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080D22934F0F500460EC3 /* paddle_api.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080E82934F0F500460EC3 /* cls_process.cc in Sources */ = {isa = PBXBuildFile; fileRef = 687080D42934F0F500460EC3 /* cls_process.cc */; };
+		687080E92934F0F500460EC3 /* libpaddle_api_light_bundled.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687080D52934F0F500460EC3 /* libpaddle_api_light_bundled.a */; };
+		687080EA2934F0F600460EC3 /* clipper.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080D62934F0F500460EC3 /* clipper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080EB2934F0F600460EC3 /* db_post_process.cc in Sources */ = {isa = PBXBuildFile; fileRef = 687080D72934F0F500460EC3 /* db_post_process.cc */; };
+		687080EC2934F0F600460EC3 /* clipper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 687080D82934F0F500460EC3 /* clipper.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080ED2934F0F600460EC3 /* det_process.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080D92934F0F500460EC3 /* det_process.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080EE2934F0F600460EC3 /* clipper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687080DA2934F0F500460EC3 /* clipper.cpp */; };
+		687080F12934F19900460EC3 /* pipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080EF2934F19900460EC3 /* pipeline.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080F22934F19900460EC3 /* pipeline.cc in Sources */ = {isa = PBXBuildFile; fileRef = 687080F02934F19900460EC3 /* pipeline.cc */; };
+		687080F52934F1A000460EC3 /* rec_process.cc in Sources */ = {isa = PBXBuildFile; fileRef = 687080F32934F1A000460EC3 /* rec_process.cc */; };
+		687080F62934F1A000460EC3 /* rec_process.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080F42934F1A000460EC3 /* rec_process.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080FA2934F1A700460EC3 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080F72934F1A700460EC3 /* utils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080FB2934F1A700460EC3 /* utils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 687080F82934F1A700460EC3 /* utils.cc */; };
+		687080FC2934F1A700460EC3 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 687080F92934F1A700460EC3 /* timer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		687080FE2934F1EB00460EC3 /* ScanflowCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687080FD2934F1EB00460EC3 /* ScanflowCore.framework */; platformFilter = ios; };
+		687081042934F2FA00460EC3 /* ScanflowTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 687081032934F2FA00460EC3 /* ScanflowTextManager.m */; };
+		6870810629359E9B00460EC3 /* ScanflowTextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6870810529359E9B00460EC3 /* ScanflowTextManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6870810829359EB900460EC3 /* ScanflowTextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6870810729359EB900460EC3 /* ScanflowTextManager.swift */; };
+		687081432936599700460EC3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687081422936599700460EC3 /* opencv2.framework */; };
+		68708144293659AE00460EC3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687080D32934F0F500460EC3 /* opencv2.framework */; };
+		68708145293659AE00460EC3 /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 687080D32934F0F500460EC3 /* opencv2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		687080A52934EFCD00460EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 687080902934EFCD00460EC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 687080982934EFCD00460EC3;
+			remoteInfo = ScanflowText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68708146293659AE00460EC3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68708145293659AE00460EC3 /* opencv2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		687080992934EFCD00460EC3 /* ScanflowText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScanflowText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6870809C2934EFCD00460EC3 /* ScanflowText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanflowText.h; sourceTree = "<group>"; };
+		6870809D2934EFCD00460EC3 /* ScanflowText.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ScanflowText.docc; sourceTree = "<group>"; };
+		687080A32934EFCD00460EC3 /* ScanflowTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanflowTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		687080A82934EFCD00460EC3 /* ScanflowTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanflowTextTests.swift; sourceTree = "<group>"; };
+		687080B52934F06800460EC3 /* config.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.txt; sourceTree = "<group>"; };
+		687080B72934F06800460EC3 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		687080B92934F06800460EC3 /* ppocr_keys_v1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ppocr_keys_v1.txt; sourceTree = "<group>"; };
+		687080BB2934F06800460EC3 /* ch_ppocr_mobile_v2.0_rec_opt.nb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ch_ppocr_mobile_v2.0_rec_opt.nb; sourceTree = "<group>"; };
+		687080BC2934F06800460EC3 /* ch_ppocr_mobile_v2.0_det_opt.nb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ch_ppocr_mobile_v2.0_det_opt.nb; sourceTree = "<group>"; };
+		687080BD2934F06800460EC3 /* ch_ppocr_mobile_v2.0_cls_opt.nb */ = {isa = PBXFileReference; lastKnownFileType = file; path = ch_ppocr_mobile_v2.0_cls_opt.nb; sourceTree = "<group>"; };
+		687080BE2934F06800460EC3 /* download.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = download.sh; sourceTree = "<group>"; };
+		687080C62934F0F500460EC3 /* cls_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cls_process.h; sourceTree = "<group>"; };
+		687080C72934F0F500460EC3 /* det_process.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = det_process.cc; sourceTree = "<group>"; };
+		687080C82934F0F500460EC3 /* clipper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = clipper.mm; sourceTree = "<group>"; };
+		687080C92934F0F500460EC3 /* db_post_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db_post_process.h; sourceTree = "<group>"; };
+		687080CB2934F0F500460EC3 /* paddle_lite_factory_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_lite_factory_helper.h; sourceTree = "<group>"; };
+		687080CC2934F0F500460EC3 /* paddle_use_ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_ops.h; sourceTree = "<group>"; };
+		687080CD2934F0F500460EC3 /* ScanflowCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowCore.framework; sourceTree = "<group>"; };
+		687080CE2934F0F500460EC3 /* paddle_use_kernels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_kernels.h; sourceTree = "<group>"; };
+		687080CF2934F0F500460EC3 /* paddle_use_passes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_use_passes.h; sourceTree = "<group>"; };
+		687080D02934F0F500460EC3 /* paddle_image_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_image_preprocess.h; sourceTree = "<group>"; };
+		687080D12934F0F500460EC3 /* paddle_place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_place.h; sourceTree = "<group>"; };
+		687080D22934F0F500460EC3 /* paddle_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle_api.h; sourceTree = "<group>"; };
+		687080D32934F0F500460EC3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		687080D42934F0F500460EC3 /* cls_process.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cls_process.cc; sourceTree = "<group>"; };
+		687080D52934F0F500460EC3 /* libpaddle_api_light_bundled.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpaddle_api_light_bundled.a; sourceTree = "<group>"; };
+		687080D62934F0F500460EC3 /* clipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clipper.h; sourceTree = "<group>"; };
+		687080D72934F0F500460EC3 /* db_post_process.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = db_post_process.cc; sourceTree = "<group>"; };
+		687080D82934F0F500460EC3 /* clipper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clipper.hpp; sourceTree = "<group>"; };
+		687080D92934F0F500460EC3 /* det_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = det_process.h; sourceTree = "<group>"; };
+		687080DA2934F0F500460EC3 /* clipper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.cpp; sourceTree = "<group>"; };
+		687080EF2934F19900460EC3 /* pipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pipeline.h; sourceTree = "<group>"; };
+		687080F02934F19900460EC3 /* pipeline.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pipeline.cc; sourceTree = "<group>"; };
+		687080F32934F1A000460EC3 /* rec_process.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rec_process.cc; sourceTree = "<group>"; };
+		687080F42934F1A000460EC3 /* rec_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rec_process.h; sourceTree = "<group>"; };
+		687080F72934F1A700460EC3 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		687080F82934F1A700460EC3 /* utils.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cc; sourceTree = "<group>"; };
+		687080F92934F1A700460EC3 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		687080FD2934F1EB00460EC3 /* ScanflowCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowCore.framework; sourceTree = "<group>"; };
+		687081032934F2FA00460EC3 /* ScanflowTextManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ScanflowTextManager.m; sourceTree = "<group>"; };
+		6870810529359E9B00460EC3 /* ScanflowTextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanflowTextManager.h; sourceTree = "<group>"; };
+		6870810729359EB900460EC3 /* ScanflowTextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanflowTextManager.swift; sourceTree = "<group>"; };
+		687081422936599700460EC3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		687080962934EFCD00460EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687080FE2934F1EB00460EC3 /* ScanflowCore.framework in Frameworks */,
+				687080E92934F0F500460EC3 /* libpaddle_api_light_bundled.a in Frameworks */,
+				687081432936599700460EC3 /* opencv2.framework in Frameworks */,
+				68708144293659AE00460EC3 /* opencv2.framework in Frameworks */,
+				687080E12934F0F500460EC3 /* ScanflowCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687080A02934EFCD00460EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687080A42934EFCD00460EC3 /* ScanflowText.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6870808F2934EFCD00460EC3 = {
+			isa = PBXGroup;
+			children = (
+				687081422936599700460EC3 /* opencv2.framework */,
+				6870814829366D0E00460EC3 /* Frameworks */,
+				6870809B2934EFCD00460EC3 /* ScanflowText */,
+				687080A72934EFCD00460EC3 /* ScanflowTextTests */,
+				6870809A2934EFCD00460EC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6870809A2934EFCD00460EC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				687080992934EFCD00460EC3 /* ScanflowText.framework */,
+				687080A32934EFCD00460EC3 /* ScanflowTextTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6870809B2934EFCD00460EC3 /* ScanflowText */ = {
+			isa = PBXGroup;
+			children = (
+				687080B32934F01700460EC3 /* Paddle */,
+				6870809C2934EFCD00460EC3 /* ScanflowText.h */,
+				6870810529359E9B00460EC3 /* ScanflowTextManager.h */,
+				687081032934F2FA00460EC3 /* ScanflowTextManager.m */,
+				6870810729359EB900460EC3 /* ScanflowTextManager.swift */,
+				687080FD2934F1EB00460EC3 /* ScanflowCore.framework */,
+				6870809D2934EFCD00460EC3 /* ScanflowText.docc */,
+			);
+			path = ScanflowText;
+			sourceTree = "<group>";
+		};
+		687080A72934EFCD00460EC3 /* ScanflowTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				687080A82934EFCD00460EC3 /* ScanflowTextTests.swift */,
+			);
+			path = ScanflowTextTests;
+			sourceTree = "<group>";
+		};
+		687080B32934F01700460EC3 /* Paddle */ = {
+			isa = PBXGroup;
+			children = (
+				687080DA2934F0F500460EC3 /* clipper.cpp */,
+				687080D62934F0F500460EC3 /* clipper.h */,
+				687080D82934F0F500460EC3 /* clipper.hpp */,
+				687080C82934F0F500460EC3 /* clipper.mm */,
+				687080D42934F0F500460EC3 /* cls_process.cc */,
+				687080C62934F0F500460EC3 /* cls_process.h */,
+				687080D72934F0F500460EC3 /* db_post_process.cc */,
+				687080C92934F0F500460EC3 /* db_post_process.h */,
+				687080C72934F0F500460EC3 /* det_process.cc */,
+				687080F02934F19900460EC3 /* pipeline.cc */,
+				687080EF2934F19900460EC3 /* pipeline.h */,
+				687080F32934F1A000460EC3 /* rec_process.cc */,
+				687080F92934F1A700460EC3 /* timer.h */,
+				687080F82934F1A700460EC3 /* utils.cc */,
+				687080F72934F1A700460EC3 /* utils.h */,
+				687080F42934F1A000460EC3 /* rec_process.h */,
+				687080D92934F0F500460EC3 /* det_process.h */,
+				687080CA2934F0F500460EC3 /* include */,
+				687080D52934F0F500460EC3 /* libpaddle_api_light_bundled.a */,
+				687080B42934F06800460EC3 /* assets */,
+			);
+			path = Paddle;
+			sourceTree = "<group>";
+		};
+		687080B42934F06800460EC3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				687080B52934F06800460EC3 /* config.txt */,
+				687080B62934F06800460EC3 /* images */,
+				687080B82934F06800460EC3 /* labels */,
+				687080BA2934F06800460EC3 /* models */,
+				687080BE2934F06800460EC3 /* download.sh */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		687080B62934F06800460EC3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				687080B72934F06800460EC3 /* test.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		687080B82934F06800460EC3 /* labels */ = {
+			isa = PBXGroup;
+			children = (
+				687080B92934F06800460EC3 /* ppocr_keys_v1.txt */,
+			);
+			path = labels;
+			sourceTree = "<group>";
+		};
+		687080BA2934F06800460EC3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				687080BB2934F06800460EC3 /* ch_ppocr_mobile_v2.0_rec_opt.nb */,
+				687080BC2934F06800460EC3 /* ch_ppocr_mobile_v2.0_det_opt.nb */,
+				687080BD2934F06800460EC3 /* ch_ppocr_mobile_v2.0_cls_opt.nb */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		687080CA2934F0F500460EC3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				687080CB2934F0F500460EC3 /* paddle_lite_factory_helper.h */,
+				687080CC2934F0F500460EC3 /* paddle_use_ops.h */,
+				687080CD2934F0F500460EC3 /* ScanflowCore.framework */,
+				687080CE2934F0F500460EC3 /* paddle_use_kernels.h */,
+				687080CF2934F0F500460EC3 /* paddle_use_passes.h */,
+				687080D02934F0F500460EC3 /* paddle_image_preprocess.h */,
+				687080D12934F0F500460EC3 /* paddle_place.h */,
+				687080D22934F0F500460EC3 /* paddle_api.h */,
+				687080D32934F0F500460EC3 /* opencv2.framework */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6870814829366D0E00460EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		687080942934EFCD00460EC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687080EC2934F0F600460EC3 /* clipper.hpp in Headers */,
+				687080AA2934EFCD00460EC3 /* ScanflowText.h in Headers */,
+				687080F62934F1A000460EC3 /* rec_process.h in Headers */,
+				687080ED2934F0F600460EC3 /* det_process.h in Headers */,
+				687080E52934F0F500460EC3 /* paddle_place.h in Headers */,
+				687080E42934F0F500460EC3 /* paddle_image_preprocess.h in Headers */,
+				687080F12934F19900460EC3 /* pipeline.h in Headers */,
+				687080FC2934F1A700460EC3 /* timer.h in Headers */,
+				687080EA2934F0F600460EC3 /* clipper.h in Headers */,
+				687080E62934F0F500460EC3 /* paddle_api.h in Headers */,
+				687080E32934F0F500460EC3 /* paddle_use_passes.h in Headers */,
+				687080E02934F0F500460EC3 /* paddle_use_ops.h in Headers */,
+				687080DB2934F0F500460EC3 /* cls_process.h in Headers */,
+				687080DE2934F0F500460EC3 /* db_post_process.h in Headers */,
+				687080DF2934F0F500460EC3 /* paddle_lite_factory_helper.h in Headers */,
+				687080FA2934F1A700460EC3 /* utils.h in Headers */,
+				687080E22934F0F500460EC3 /* paddle_use_kernels.h in Headers */,
+				6870810629359E9B00460EC3 /* ScanflowTextManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		687080982934EFCD00460EC3 /* ScanflowText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687080AD2934EFCD00460EC3 /* Build configuration list for PBXNativeTarget "ScanflowText" */;
+			buildPhases = (
+				687080942934EFCD00460EC3 /* Headers */,
+				687080952934EFCD00460EC3 /* Sources */,
+				687080962934EFCD00460EC3 /* Frameworks */,
+				687080972934EFCD00460EC3 /* Resources */,
+				68708146293659AE00460EC3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanflowText;
+			productName = ScanflowText;
+			productReference = 687080992934EFCD00460EC3 /* ScanflowText.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		687080A22934EFCD00460EC3 /* ScanflowTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687080B02934EFCD00460EC3 /* Build configuration list for PBXNativeTarget "ScanflowTextTests" */;
+			buildPhases = (
+				6870809F2934EFCD00460EC3 /* Sources */,
+				687080A02934EFCD00460EC3 /* Frameworks */,
+				687080A12934EFCD00460EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				687080A62934EFCD00460EC3 /* PBXTargetDependency */,
+			);
+			name = ScanflowTextTests;
+			productName = ScanflowTextTests;
+			productReference = 687080A32934EFCD00460EC3 /* ScanflowTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		687080902934EFCD00460EC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					687080982934EFCD00460EC3 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					687080A22934EFCD00460EC3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 687080932934EFCD00460EC3 /* Build configuration list for PBXProject "ScanflowText" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6870808F2934EFCD00460EC3;
+			productRefGroup = 6870809A2934EFCD00460EC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				687080982934EFCD00460EC3 /* ScanflowText */,
+				687080A22934EFCD00460EC3 /* ScanflowTextTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		687080972934EFCD00460EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687080C52934F06800460EC3 /* download.sh in Resources */,
+				687080C42934F06800460EC3 /* ch_ppocr_mobile_v2.0_cls_opt.nb in Resources */,
+				687080C12934F06800460EC3 /* ppocr_keys_v1.txt in Resources */,
+				687080BF2934F06800460EC3 /* config.txt in Resources */,
+				687080C32934F06800460EC3 /* ch_ppocr_mobile_v2.0_det_opt.nb in Resources */,
+				687080C22934F06800460EC3 /* ch_ppocr_mobile_v2.0_rec_opt.nb in Resources */,
+				687080C02934F06800460EC3 /* test.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687080A12934EFCD00460EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		687080952934EFCD00460EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6870809E2934EFCD00460EC3 /* ScanflowText.docc in Sources */,
+				687081042934F2FA00460EC3 /* ScanflowTextManager.m in Sources */,
+				687080DC2934F0F500460EC3 /* det_process.cc in Sources */,
+				687080F52934F1A000460EC3 /* rec_process.cc in Sources */,
+				687080E82934F0F500460EC3 /* cls_process.cc in Sources */,
+				687080FB2934F1A700460EC3 /* utils.cc in Sources */,
+				687080EE2934F0F600460EC3 /* clipper.cpp in Sources */,
+				687080DD2934F0F500460EC3 /* clipper.mm in Sources */,
+				6870810829359EB900460EC3 /* ScanflowTextManager.swift in Sources */,
+				687080EB2934F0F600460EC3 /* db_post_process.cc in Sources */,
+				687080F22934F19900460EC3 /* pipeline.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6870809F2934EFCD00460EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687080A92934EFCD00460EC3 /* ScanflowTextTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		687080A62934EFCD00460EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 687080982934EFCD00460EC3 /* ScanflowText */;
+			targetProxy = 687080A52934EFCD00460EC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		687080AB2934EFCD00460EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		687080AC2934EFCD00460EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		687080AE2934EFCD00460EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanflowText/Paddle/include",
+					"$(PROJECT_DIR)/ScanflowText",
+					"$(PROJECT_DIR)/ScanflowText/Paddle",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanflowText/Paddle",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = obs.ScanflowText;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		687080AF2934EFCD00460EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanflowText/Paddle/include",
+					"$(PROJECT_DIR)/ScanflowText",
+					"$(PROJECT_DIR)/ScanflowText/Paddle",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanflowText/Paddle",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = obs.ScanflowText;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		687080B12934EFCD00460EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = obs.ScanflowTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		687080B22934EFCD00460EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J8G8DUU33R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = obs.ScanflowTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		687080932934EFCD00460EC3 /* Build configuration list for PBXProject "ScanflowText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687080AB2934EFCD00460EC3 /* Debug */,
+				687080AC2934EFCD00460EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687080AD2934EFCD00460EC3 /* Build configuration list for PBXNativeTarget "ScanflowText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687080AE2934EFCD00460EC3 /* Debug */,
+				687080AF2934EFCD00460EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687080B02934EFCD00460EC3 /* Build configuration list for PBXNativeTarget "ScanflowTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687080B12934EFCD00460EC3 /* Debug */,
+				687080B22934EFCD00460EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 687080902934EFCD00460EC3 /* Project object */;
+}
