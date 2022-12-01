@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6892C6612938B60900FB36BA"
-               BuildableName = "BatchCaptureSample.app"
-               BlueprintName = "BatchCaptureSample"
-               ReferencedContainer = "container:BatchCaptureSample.xcodeproj">
+               BuildableName = "BarcodeCaptureSample.app"
+               BlueprintName = "BarcodeCaptureSample"
+               ReferencedContainer = "container:BarcodeCaptureSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6892C6612938B60900FB36BA"
-            BuildableName = "BatchCaptureSample.app"
-            BlueprintName = "BatchCaptureSample"
-            ReferencedContainer = "container:BatchCaptureSample.xcodeproj">
+            BuildableName = "BarcodeCaptureSample.app"
+            BlueprintName = "BarcodeCaptureSample"
+            ReferencedContainer = "container:BarcodeCaptureSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6892C6612938B60900FB36BA"
-            BuildableName = "BatchCaptureSample.app"
-            BlueprintName = "BatchCaptureSample"
-            ReferencedContainer = "container:BatchCaptureSample.xcodeproj">
+            BuildableName = "BarcodeCaptureSample.app"
+            BlueprintName = "BarcodeCaptureSample"
+            ReferencedContainer = "container:BarcodeCaptureSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     //We are init the ScanflowManager function in which we have barcode related functions
-    private lazy var scanflowManager = ScanflowBarCodeManager(previewView: scannerView, installedDate: Date(), scannerType: "batchInventry", overCropNeed: false, overlayApperance: .square, leftTopArc: .red, leftDownArc: .blue, rightTopArc: .yellow, rightDownArc: .white)
+    // scannerType: any -> capture any bar code and qrcode
+    // scannerType: qrCode -> it decode only qrcode
+    // scannerType: barCode -> it decode only barcode
+    private lazy var scanflowManager = ScanflowBarCodeManager(previewView: scannerView, installedDate: Date(), scannerType: "any", overCropNeed: false, overlayApperance: .square, leftTopArc: .red, leftDownArc: .blue, rightTopArc: .yellow, rightDownArc: .white)
     
     override func viewDidLoad() {
         super.viewDidLoad()
