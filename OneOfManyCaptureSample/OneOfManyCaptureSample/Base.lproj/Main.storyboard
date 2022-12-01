@@ -53,6 +53,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultLabel" destination="mc6-d7-wXk" id="pzX-JT-OBi"/>
                         <outlet property="scannerView" destination="ASn-dL-Ogp" id="F7d-HG-iaB"/>
                     </connections>
                 </viewController>
