@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BatchCaptureSample
+//  OneOfManyCaptureSample
 //
 //  Created by Mac-OBS-46 on 01/12/22.
 //
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     //We are init the ScanflowManager function in which we have barcode related functions
-    private lazy var scanflowManager = ScanflowBarCodeManager(previewView: scannerView, installedDate: Date(), scannerType: "batchInventry", overCropNeed: false, overlayApperance: .square, leftTopArc: .red, leftDownArc: .blue, rightTopArc: .yellow, rightDownArc: .white)
+    private lazy var scanflowManager = ScanflowBarCodeManager(previewView: scannerView, installedDate: Date(), scannerType: "pivotView", overCropNeed: false, overlayApperance: .square, leftTopArc: .red, leftDownArc: .blue, rightTopArc: .yellow, rightDownArc: .white)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +76,7 @@ extension ViewController: ScanflowCameraManagerDelegate {
         // Since updating UI, we have to run in  main thread.
         DispatchQueue.main.async {
             //loading result to resaults lable
-            resultLabel.text = "\(results)"
+            resultLabel.text = result
             //This is for mentionting code type like CODE128, CODE39 and etc
             print(codeType)
         }
